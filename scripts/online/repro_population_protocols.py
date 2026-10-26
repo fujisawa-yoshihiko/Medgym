@@ -14,8 +14,8 @@ after decision k, the action of decision k and the SOFA after it are knots at th
 between and flat before the first knot (the initial state is not a knot). Then the RMSE against the released means
 (states divided by the released range of each variable).
 
-Result (2026-10-26): (b) reproduces the released curves (states, actions and SOFA equal up to float error, both fixdt
-and vardt); (a), (b') and (c) do not.
+Result (2026-10-26): (b) reproduces the released curves (states, actions and SOFA: fixdt equal up to float32 rounding,
+vardt within 0.05 at most (PaO2, mmHg)); (a), (b') and (c) do not.
 
     uv run python scripts/online/repro_population_protocols.py <path/to/checkpoints-case-pinn> [--n 20]
 """
